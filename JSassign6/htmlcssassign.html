@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+.main{
+
+ height: 100%;
+ width: 200px;
+ background-color: blue;
+}
+.button{
+
+  padding: 100px;
+  background-color: aqua;
+}
+</style>
+</head>
+<body>
+<div class="main">
+<ul id="myList">
+</ul>
+<div class="button">
+<button onclick="populateList()">colors</button>
+</div></div>
+<script>
+function populateList() {
+  var myList = document.getElementById("myList");
+  var colors = ["yellow", "green", "Orange"];
+  for (var i = 0; i < colors.length; i++) {
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(colors[i]));
+    myList.appendChild(li);
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-2</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section{
+            margin: 10px 0px;
+        }
+        
+        body {
+            background-color: #ffcfcf;
+            padding: 10px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .header {
+            border: 1px solid red;
+            padding: 10px 0px;
+            background-color: aqua;
+        }
+
+        .main-box{
+            display: flex;
+        }
+
+        .aside {
+            width: 30%;
+            background-color: aqua;
+            border: 1px solid red;
+            margin-right: 10px;
+        }
+
+        .right-content{
+            width: 70%;
+            background-color: rgb(253, 116, 36);
+            border: 1px solid red;
+
+        }
+
+        .blank{
+            height: 60px;
+        }
+
+        .artical-images{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0px;
+            padding: 0px 10px;
+        }
+        
+        
+        .artical-images > .img {
+
+            /* background-image: url('https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg'); */
+            height: 100px;
+            width: 32%;
+            background-color: gray;
+            background-size: cover;
+            transition: 1s ease-in-out;
+            /* box-shadow: 1px 1px 1px 1px white; */
+
+            
+        }
+
+        .artical-images > .img :hover{
+            box-shadow: 0px 0px 6px 1px white;
+            /* scale: 1.1; */
+        }
+
+        img{
+            height: 100px;
+            width: 100%;
+        }
+
+        .footer {
+            border: 1px solid red;
+            padding: 10px 0px;
+            background-color: aqua;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+
+    <section>
+        <div class="header text-center">
+            <p>header</p>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="main-box">
+            <div class="aside text-center">
+
+                <p>aside</p>
+            </div>
+
+            <div class="right-content text-center">
+
+                <div class="blank"></div>
+
+                <div class="artical text-center">
+                    <p>Artical</p>
+
+                    <div class="artical-images">
+
+                        <div class="img">
+                            <img src="https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg" alt="" srcset="">
+                        </div>
+
+                        <div class="img">
+                            <img src="https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg" alt="" srcset="">
+                        </div>
+
+                        <div class="img">
+                            <img src="https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg" alt="" srcset="">
+                        </div>
+
+                        <div class="img">
+                            <img src="https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg" alt="" srcset="">
+                        </div>
+
+                        <div class="img">
+                            <img src="https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg" alt="" srcset="">
+                        </div>
+
+                        <div class="img">
+                            <p>Images</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="footer text-center">
+            <p>Footer</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+         Assignment- 1
+
+    Q1 Find the invalid given identifier?
+    1.var 2ndplace;
+    2.var my-variable;
+    3.var var;
+    4.var first name;
+    5.var @variable;
+    6. var _counter;
+    7. var $totalAmount;
+    Ans-   1,2,3,4,5 are invalid identifier
+
+    Q2.what is the scope of a variable declared using var ,let and constant ?
+    ans- The scope of a var variable is a global scope or functional scope .
+    The scope of a let variable is a block scope 
+    the scope of a constant variable is block scope .
+
+    Q3.What will be the output for this given programme?
+    
+    fucntion testvariable()
+    {
+    console.log(a);
+    if (true)
+    {
+    var a = 10;
+    let b =20;
+    const c= 30;
+    }
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    }
+   testvariables();
+   output- undefined
+
+  Q4.what are the data type in javascript ?
+  Ans- In java script, data types refer to the types of values that variable can hold.
+
+
+  Q5.what are the primitive data type in java script?
+  Ans- string ,number ,boolean , null, undefined and symbol are primitive data type .in java script.
+ 
+  Q6.what are the differences between the primitive data types and reference data type?
+ 
+  ANS-Primitive data type- these are the data type provided by java.there size is fixed.
+ string,null ,etc are the example of primitive data type.
+  References data type-these are the data type created by a programmer.there size is depend on the number of member variable and their type.object ,function etc are the example of references data type
+
+  Q7.what are the different ways to create a string in javascript?
+  Ans-we can create string by wrapping the text inside 
+  single quote(')
+  double quote(")
+  backticks(')
+
+  Q8 How do you check the data types of a variable in javascript ?
+ ANS -we can use "the type of "operator to find the data type of a java script variable.
+
+
+
+
+
+
+
+							ASSIGNMENT-2
+
+   Q1  . What is the differences between unary ,binary and ternary operators in javascript ?provide example of each?
+   ANS- UNARY OPERATORS- These operators requires one operand for operation .providing two or more can result in a syntax error .
+   for example- let x= 10;
+                      let y= +x 
+                     console.log(y);    
+                     output-10
+     if we place the unary plus before a numeric value it does nothing 
+    when we apply the unary plus operator to a non numeric value,it perform a number conversion using the number()
+
+      Binary operators- the operator requires two operand for operation .
+      for example-
+      arithmetic operation  -          10+20  //30
+      comparison operators -       80<20   //false
+      Assignment operators-       const number =20
+
+      
+      Ternary operators- the operator required three operands.
+      for example- let age=15;
+                     
+           let result;
+           if(age>= 18)
+        {
+         result= "you are eligible to vote";
+       }else
+      {
+        result="you are not eligible to vote";
+       }
+       console.log(result);
+
+      output- you are not eligible to vote
+
+
+     Q2  explain the concept of short circuit  evaluation in the context of logical operators. provide an example
+    ans-The logical AND operator performs short-circuit evaluation: if the left-hand operand is false, the right-hand expression is not evaluated. The logical OR operator also performs short-circuit evaluation: if the left-hand operand is true, the right-hand expression is not evaluated.
+   for example-
+   console.log(3 || 'Orange');
+   console.log('' || 'Orange');
+   console.log(true || 0);
+   console.log(undefined || null);
+
+   output-
+   3
+   Orange
+   true
+   null
+
+   example2-
+   console.log(0 && 'Orange');
+   console.log('' && 'Orange');
+   console.log(true && null);
+   console.log('Apple' && 'Orange');
+   
+
+   output- 
+   0
+
+   null
+   Orange
+
+
+   Q3.Given the following code snippet whAT will be the output?
+  
+   let x = 5;
+   let y = "10";
+   let z = x + y;
+   console.log(z);
+
+   output= 510
+
+
+   Q4.write the javascript function named calculate area that take the radius of a circle as a parameter and returns the area of the circle .use the appropriate arithmetic operators 
+  
+
+      function calculateArea(radius)
+      {
+      const PI= math.PI;
+      let area= PI * radius * radius;
+      return area;
+      }
+   
+    
+   Q5.explain the difference between the equality operator (==)and strict equality operator (===)in javascript .
+   
+      equal operator-
+   ans - = JavaScript operator assigns a value to the left operand depends on the value of operand available on the right side. The first operand should be a variable.
+
+    The basic assignment operator is =, that assigns the value of one operand to another. That is, a = b assigns the value of b to a.
+
+   equality operator-
+   Double equals (==) is a comparison operator, which transforms the operands having the same type before comparison. its check the data type.
+
+
+
+   strict operator-
+   Strict equality === checks that two values are the same or not.
+  if the variable values are of different types, then the values are considered as unequal.
+  itwill check the value as well as data type also.
+
+   
+
+   Q6.write a program to convert fahrenheit to celsius?
+ 
+      function fahrenheittoCelsius(f)
+     {
+      let c=(f-32)*5/9;
+      return c;
+     }
+
+     console.log(fahrenheittoCelsius(32));   //0
+     console.log(fahrenheittoCelsius(68));  //20
+     console.log(fahrenheittoCelsius(100));  //37.777777
+
+
+
+

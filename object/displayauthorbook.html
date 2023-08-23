@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var library = [
+          {
+        author: "Bill Gates",
+        title:" The road ahead",
+        readingStatus: true
+
+        },
+        {
+            author: "Steve jobs",
+           title: "walter issacon",
+              readingStatus: true 
+        },
+    ];
+    for(var i=0; i< library.length; i++)
+    {
+        var book = " " + library[i].title + " ' " + 'by' + library[i].author + " . ";
+    if(library[i].readingStatus){
+        console.log("Already read" + book);
+    }else
+{
+    console.log("you still need to read" + book)
+ }}
+
+</script>
+
+</body>
+</html>

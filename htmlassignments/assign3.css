@@ -1,0 +1,256 @@
+.header{
+ 
+    border: 0px solid cornflowerblue;
+   background-color:whitesmoke;
+  
+}
+.navbar{
+   
+    display: flex;
+    list-style-type: none;
+    justify-content: right;    
+    
+}
+
+ul>li{
+    
+   margin: 1%;
+    color:black;
+   font-size: small;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-align: right;
+  }
+
+.mainbox{
+ 
+   
+   background-color: rgb(54, 167, 142);
+  height: 290px;
+  position: relative
+  
+    
+}
+.heading{
+
+    padding-left: 100px;
+   
+
+}
+
+.paragraph{
+
+    padding-left: 100px;
+    font-size: small;
+}    
+
+.side{
+
+    text-align: center;
+ 
+
+
+}
+
+.right-container{
+
+ display: flex;
+    justify-content: right;
+}
+
+.img1{
+
+justify-content:right;
+position: relative;
+top: -222px;
+padding-right:295px;
+}
+
+.Readmore{
+
+    background-color: teal;
+    border-radius: 2px;
+    color: aliceblue;
+   
+}
+
+.thirdsection{
+
+    background-color:gainsboro;
+   padding: 80px;
+   text-align: center;
+  
+   
+}
+
+.part1{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+ 
+.part2{
+
+    text-align: left;
+    display: flex;
+    font-size: larger;
+    
+    
+}
+   
+.img2{
+
+    position: absolute;
+    margin-top: 25px;
+    text-align: left;
+    left: 60px;
+    flex-direction: row;
+}
+     
+.para{
+
+     font-size:small;
+     margin-top:-15px;
+     color:grey;
+     
+
+}
+
+.account{
+
+    font-size: small;
+}
+
+.para2{
+
+    font-size:small;
+    margin-top:-15px;
+    color:grey;
+    margin-top: -25px;
+    left: 70px;
+    position: relative;
+
+}
+
+
+.tax{
+
+    display: flex;
+    margin-left: 70px;
+    padding-top: 20px;
+  
+}
+
+.head{
+
+    font-size: small;
+    
+    margin-top: -20px;
+    left: 9px;
+}
+    
+.para8{
+
+font-size: small;
+color: grey;
+margin-left:-48px;
+
+}
+
+.finance{
+    display: flex;
+    margin-left: 70px;
+    padding-top: 20px;
+}
+
+.advi{
+ 
+    font-size: small;
+    margin-top: -20px;
+    left: 9px;
+
+}
+
+.lines{
+
+    font-size: small;
+    color: grey;
+  margin-left:-90px;
+  padding-top: 1px;
+
+}
+
+.chooseme{
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+    font-weight: bolder;
+
+}
+
+
+.innersection{
+
+    display: flex;
+    margin-bottom: 80px;
+
+    
+}
+
+.growth{
+     
+    width: 300px;
+    height: 70px;
+    padding: 25px;
+    border: 1px solid black;
+    margin: 60px;
+    background-color: gainsboro;
+
+}
+
+.vision{
+
+    width: 300px;
+    height: 70px;
+    padding: 25px;
+    border: 1px solid black;
+    margin: 60px;
+    background-color:gainsboro;
+
+
+
+}
+
+.availability{
+
+    width: 300px;
+    height: 70px;
+    padding: 25px;
+    border: 1px solid black;
+    margin: 60px;
+    background-color: gainsboro;
+}
+
+
+.fourthsection{
+
+    background-color: beige;
+    margin-top: 90px;
+
+  
+}
+
+.img11{
+
+    font-size: small;
+    
+}
+
+.img22{
+
+    font-size: small;
+}
+
+.img33{
+
+    font-size: smaller;
+}
