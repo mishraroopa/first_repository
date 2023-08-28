@@ -11,7 +11,7 @@ tr,td{
     font-size: larger;
 
 } 
-.loan{
+.header{
 
     font-size: x-large;
     border:2px solid grey;
@@ -22,7 +22,7 @@ tr,td{
     background-color: cadetblue;
     color: honeydew;
 }
-.header2{
+.lendersinfo{
     border: 2px solid grey;
     border-bottom: 0;
     border-left: 0;
@@ -30,7 +30,7 @@ tr,td{
     border-style: dotted;
 }
 
-.header3{
+.loaninfo{
 
     border: 2px solid grey;
     border-bottom: 0;
@@ -39,7 +39,7 @@ tr,td{
     border-style: dotted; 
 }
 
-.heading{
+.termscondition{
 
     text-align: center;
     background-color: cadetblue;
@@ -57,7 +57,7 @@ tr,td{
 
 }
 
-.heading2{
+.sideheading1{
 
    
    margin-right: 20px;
@@ -70,7 +70,7 @@ tr,td{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.payment{
+.sideheading2{
 
     margin-right: 20px;
    padding-top:60px;
@@ -82,12 +82,12 @@ tr,td{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.failure{
+.sideheading3{
 
     margin-right: 20px;
     padding-top:60px;
 }
-.warranty{
+.sideheading4{
 
     margin-right: 20px;
    padding-top:60px;
@@ -97,7 +97,7 @@ tr,td{
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
 }
-.amendment{
+.sideheading5{
     
     margin-right:20px;
     padding-top:60px;
@@ -109,7 +109,7 @@ tr,td{
     font-family: 'Times New Roman', Times, serif; 
 }
 
-.law{
+.sideheading6{
 
     margin-right:20px;
     padding-top:60px;
@@ -122,14 +122,14 @@ tr,td{
     
 }
 
-.Assignment{
+.sideheading7{
 
     margin-right:20px;
     padding-top:60px;
 
 }
 
-.Noti{
+.sideheading8{
 
     margin-right:20px;
     padding-top:60px;
@@ -139,7 +139,7 @@ tr,td{
     font-family: 'Times New Roman', Times, serif; 
     
 }
-.party{
+.sideheading9{
 
     border: 2px solid grey;
     border-top: 0;
@@ -187,7 +187,4 @@ tr,td{
     border-right: 0;
     border-style: dotted;
     margin-bottom:100px;
-
-
-
 }
