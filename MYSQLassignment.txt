@@ -1,0 +1,94 @@
+
+DBMS ASSIGNMENT
+
+
+//create database
+
+create DATABASE company_db ;
+
+
+//create table customer
+
+create table customers(
+  Customer_id INT NOT NULL AUTO_INCREMENT,
+  First_name varchar(50) NULL,
+  Last_name varchar(50) null,
+  Email varchar(50) null,
+  Phone int(10) null,
+  Address varchar(50) null,
+  PRIMARY KEY( Customer_id))
+    
+    
+  //create table order
+
+create table orders(
+  orders_id INT NOT NULL AUTO_INCREMENT,
+  customer_id int NOT NULL,
+  order_date date  null,
+  total_amount float , 
+  PRIMARY KEY(orders_id),
+  FOREIGN KEY(customer_id)REFERENCES customers(customer_id))
+               
+
+//insert into customer table
+
+INSERT INTO `customers`( `First_name`, `Last_name`, `Email`, `Phone`, `Address`) 
+VALUES 
+("rakhi", "saini" , "rakhi@gmail.com", "989779779", "delhi" ),
+("dev", "tiwari" , "dev@gmail.com", "989779775", "kerala" ),
+("sachin", "pawar" , "sachin@gmail.com", "989779773", "madhyapradesh" ),
+("riya", "sen" , "riya@gmail.com", "989779778", "delhi" ),
+("john", "doe" , "john@gmail.com", "989779772", "brazil" )
+
+insert into order table
+
+INSERT INTO `orders`( `customer_id`, `order_date`, `total_amount`) 
+VALUES 
+(1,'2022-09-5',100),
+(2,'2022-09-6',200),
+(3,'2022-09-7',300),
+(4,'2022-06-8',400),
+(5,'2022-09-9',500),
+(6,'2022-09-10',600),
+(7,'2022-09-11',700),
+(8,'2022-09-12',800),
+(9,'2022-06-13',900),
+(10,'2022-09-14',1000)
+
+
+//deleted row
+
+DELETE FROM `customers` WHERE Customer_id = 5;
+
+
+//Inner join
+
+SELECT * FROM customers inner join orders on 
+customers.Customer_id = orders.orders_id;
+
+
+//left join
+
+SELECT * FROM customers left join orders on 
+customers.Customer_id = orders.orders_id;
+
+
+//right join
+
+SELECT * FROM customers RIGHT join orders on 
+customers.Customer_id = orders.orders_id;
+
+//concatination
+
+
+SELECT CONCAT(first_name,' ',last_name)
+AS full_name from customers;
+
+
+//concatination in inner join
+
+SELECT *,CONCAT(customers.first_name,' ',customers.last_name)
+AS full_name FROM customers inner join orders on 
+customers.customer_id = orders.customer_id;
+
+      
