@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List</title>
+ <style>
+ul {
+list-style-type: none;
+padding: 0;
+}
+li {
+margin-bottom: 10px;
+}
+button {
+margin-top: 10px;
+}
+.main{
+
+    padding:5px;
+    background-color:lightgray;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align-last: center;
+
+}
+.body{
+
+    padding: 180px;
+    background-color: azure;
+    text-align: center;
+
+
+}
+
+</style>
+</head>
+<body>
+ <div class="main">
+<h1>Dynamic List Example</h1>
+</div>
+<div class="body">
+<div class="button1">
+    <button onclick="populateList()">Subjects</button>
+
+<ul id="myList">
+</ul>
+</div>
+<script>
+function populateList() {
+var items = ['Maths', 'science', 'English', 'Social', 'hindi'];
+var list = document.getElementById('myList');
+
+for (var i = 0; i < items.length; i++) {
+var li = document.createElement('li');
+li.textContent = items[i];
+list.appendChild(li);
+}
+}
+</script>
+</body>
+</html>
+`</div>``

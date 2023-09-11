@@ -1,0 +1,65 @@
+body{
+
+    background-color: rgb(245, 173, 161);
+}
+
+.header{
+
+   border: 1px solid aquamarine;
+   background-color: aquamarine;
+   color: blue;
+   padding-bottom: 0px 5px;
+
+}
+
+.gallery{
+ 
+   background-color: tomato;
+   padding: 80px;
+   margin:4%;
+   color: blue;
+}
+
+.footer{
+
+    border: 1px solid aquamarine;
+   background-color: aquamarine;
+   color:blue;
+
+}
+ 
+.image-section{
+
+    display: flex;
+     gap: 10px;
+    margin: 10px 0px;
+    padding:0px 10px;
+    flex-wrap: wrap;
+
+    
+   
+}
+
+.image-section > .img {
+
+   
+ height: 90px;
+    width: 32%;
+    background-color: gray;
+    background-size:cover;
+   
+}
+    
+    
+
+.text-center{
+
+    text-align: center;
+    
+}
+
+img{
+    height: 90px;
+    width: 100%;
+}
+

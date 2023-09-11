@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Comparison</title>
+<style>
+.error {
+color: red;
+}
+.main{
+
+    font-size:x-large;
+    color:green;
+}
+</style>
+</head>
+<div class="main">
+<h5>String Comparison</h5></div>
+<label for="string1">Para1:</label>
+<input type="text" id="string1" />
+<br/>
+<br>
+<label for="string2">Para2:</label>
+<input type="text" id="string2" />
+<br />
+<br>
+<br>
+<button onclick="compareStrings()">Compare Strings</button>
+<br />
+<div id="result"></div>
+
+<script>
+function compareStrings() {
+     
+var string1 = document.getElementById('string1').value;
+var string2 = document.getElementById('string2').value;
+var resultDiv = document.getElementById('result');
+resultDiv.innerHTML = '';
+
+if (string1.length !== string2.length) {
+resultDiv.innerHTML = 'Strings are not the same length.';
+return;
+}
+
+for (var i = 0; i < string1.length; i++) {
+if (string1[i] !== string2[i]) {
+var errorSpan = document.createElement("span");
+errorSpan.classList.add('error');
+errorSpan.innerHTML = string1[i];
+
+resultDiv.appendChild(errorSpan);
+} else {
+resultDiv.innerHTML += string1[i];
+}
+}
+}
+</script>
+</body>
+</html>

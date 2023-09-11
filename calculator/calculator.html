@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="calculator.js"></script>
+    
+
+<style>
+#calci{
+
+    width: 275px;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+    
+.line{
+
+    width: 275px;
+    border-radius: 20px;
+    
+}
+.keys{
+
+    margin-left: 545px;
+    margin-top: 2px;
+}
+.input{
+
+    margin-top: 100px;
+}
+#heading{
+
+    text-align: center;
+    background-color: aqua;
+    color:brown;
+    font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+</head>
+<body background="calci.jpg">
+<h1 id="heading">calculator using html and javascript </h1>  
+
+<div class="container text-center input">
+  
+  <input id="calci" type="text" name="answer" placeholder=" 0" style="background-color: burlywood;">
+  </div>
+  
+    
+   <div class="keys line">
+   <button onclick="append('1')" style= "border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;">1</button>
+   <button onclick="append('2')"  style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;">2</button>
+   <button onclick="append('3')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;">3</button>
+   <button onclick="append('4')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;">4</button>
+   <button onclick="append('5')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;"  >5</button>
+   <button onclick="append('6')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;">6</button>
+   <button onclick="append('7')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown;  color: aliceblue;">7</button>
+   <button onclick="append('8')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;" >8</button>
+   <button onclick="append('9')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;" >9</button>
+   <button onclick="append('0')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;" >0</button>
+   <button onclick="append('+')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;">+</button>
+   <button onclick="append('-')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;">-</button>
+   <button onclick="append('*')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;">*</button>
+   <button onclick="append('/')" style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;">/</button>
+   <button onclick="equal()"     style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;">=</button>
+   <button onclick="allclear('')"  style="border-radius: 5px; width: 65px; height:60px; background-color: brown; color: aliceblue;">AC</button>
+  </div>
+  </div>
+  </div>
+   
+   
+  </body>
+  </html>

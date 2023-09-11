@@ -1,0 +1,72 @@
+body{
+
+    background-color: tomato;
+}
+
+section{
+    margin: 20px 0px;
+}
+
+.header{
+    border: 1px solid red;
+    
+    background-color: aqua;
+}
+
+.main-box{
+
+    display: flex;
+}
+
+.aside{
+
+    width: 10%;
+            background-color: aqua;
+            border: 1px solid red;
+            margin-right: 40px;
+            padding: 15%;
+            margin-left: 20px;
+            
+}
+
+.right-box{
+
+    width: 70%;
+    background-color: rgb(253, 116, 36);
+    border: 1px solid red;
+   margin-right: 20px;
+}
+.blank{
+    height: 25%;
+}
+
+.artical-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+
+.artical-images > .img {
+
+    /* background-image: url('https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg'); */
+    height: 90px;
+    width: 32%;
+    background-color: gray;
+    background-size: cover;}
+
+.text-center {
+    text-align: center;
+}
+
+img{
+    height: 90px;
+    width: 100%;
+}
+
+.footer{
+    border: 1px solid red;
+            padding: 10px 0px;
+            background-color: aqua;
+}
